@@ -15,7 +15,7 @@ def login(this):
         f"Logged in to {bot_socket.server if bot_socket.server else bot_socket._host }"
     )
 
-# Kicked event (got kicked from server)
+# Kicked event (Got kicked from server)
 @On(bot, "kicked")
 def kicked(this, reason, loggedIn):
     if loggedIn:
@@ -23,8 +23,7 @@ def kicked(this, reason, loggedIn):
     else:
         print(f"Kicked whilst trying to connect: {reason}")
 
-
-# End event (disconnected from server)
+# End event (Disconnected from server)
 @On(bot, "end")
 def end(this, reason):
     print(f"Disconnected: {reason}")
