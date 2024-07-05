@@ -1,6 +1,3 @@
-import vec3
-
-
 def vec3_to_str(v):
     return f"x: {v['x']:.3f}, y: {v['y']:.3f}, z: {v['z']:.3f}"
 
